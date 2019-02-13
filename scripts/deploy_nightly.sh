@@ -1,7 +1,7 @@
 set -e				# fail on error
 
 # Only run on builds for pushes to the master branch.
-if ! [ "$TRAVIS_EVENT_TYPE" = "push" -a "$TRAVIS_BRANCH" = "master" ]; then
+if ! [ "$TRAVIS_EVENT_TYPE" = "push" -a "$TRAVIS_BRANCH" = "rwbarton-travis" ]; then
     exit 0
 fi
 
